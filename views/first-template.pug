@@ -1,0 +1,15 @@
+doctype html
+html
+ head
+  title="App XYZ"
+  link(rel='stylesheet', href='http://localhost:3000/style.css', type='text/css')
+ body
+  h1.appHeader App XYZ
+  p.loginRules Log in to use your Google account with App XYZ.
+   form.dataForm(action="http://localhost:3000/succeed/login", method="GET", required)
+    p Login:
+     input.login(type="text", name="login" autocomplete="off")
+    p Password:
+     input.password(type="password", name="password" autocomplete="off", required)
+    input.sumbitButton(type="submit", value="Submit")
+ 
